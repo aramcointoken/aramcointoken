@@ -132,10 +132,10 @@ contract BEP20Token is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = "TokenName"; //CHANGEME
-    _symbol = "TokenSymbol"; //CHANGEME
+    _name = "AramCoinToken"; 
+    _symbol = "armc"; 
     _decimals = 8;
-    _totalSupply = 100000000000000; //1,000,000 Tokens
+    _totalSupply = 100000000000000000; 
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
